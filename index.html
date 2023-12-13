@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Launch Page</title>
+<style>
+  body, html {
+    height: 100%;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #611fa0, #4c1970, #37379a, #2e622e, #6c6c2a, #563a1d, #9f3a3a);
+  }
+
+  .logo {
+    width: 150px; /* You can adjust this as needed */
+    height: 150px; /* You can adjust this as needed */
+    background-image: url('./logo.png'); /* Path to the logo image */
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-bottom: 20px; /* Space between logo and text */
+  }
+
+  .launch-text {
+    color: white;
+    font-size: 4em;
+    text-shadow: 2px 2px 4px #000000;
+  }
+
+  @media (max-width: 768px) {
+    .launch-text {
+      font-size: 2em;
+    }
+
+    .logo {
+      width: 100px;
+      height: 100px;
+    }
+  }
+</style>
+</head>
+<body>
+
+<div class="logo"></div> <!-- Logo div -->
+<div class="launch-text">Launching V1 Soon</div>
+
+</body>
+</html>
